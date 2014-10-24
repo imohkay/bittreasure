@@ -117,50 +117,9 @@ body, input, textarea {
 
 .heading-primary {
 	text-align: center;
+	margin: 10px 0;
 }
  
-/* cms styles */
-
-/* preprend with CMS selector */
-/* set a max-width if necessary on img_left and img_right and change on media query */
-
-/*
-ol, ul  {
-	padding-left:20px;
-	list-style-position: inside;
-}
-
-ol {
-	list-style-type: decimal;
-}
-
-ul {
-	list-style-type: disc;
-}
-
-.img_left, .img_right, .img_full {
-	display: block;
-}
-
-.img_left {
-	float: left;
-	padding: 0 10px 0 0;
-}
-
-.img_right {
-	float: right;
-	padding: 0 0 0 10px;
-}
-
-.img_full {
-	padding: 0 0 10px 0;
-	margin-left: auto;
-	margin-right: auto;
-}
-*/
-
-/* end cms styles */
-
 a {
   text-decoration: none;
 }
@@ -277,6 +236,37 @@ textarea {
 	
 /* END LIST VIEW */
 
+/* FORM-STYLING */
+
+.field-wrap {
+  padding: 10px 0;
+}
+
+.form-default label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-default input[type="text"], .form-default input[type="email"], .form-default input[type="password"], .form-default input[type="submit"], .form-default button, .form-default textarea {
+	width: 100%;
+	display: block;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.form-default input[type="text"]:focus, .form-default input[type="submit"]:focus, .form-default button:focus, form-default input[type="email"]:focus, .form-default input[type="password"]:focus, .form-default textarea:focus {
+	border: 1px solid #3dc09d; /* common value */
+	outline: none;	
+}
+
+.form-default input[type="submit"], .form-default button {
+	background: #3dc09d;
+	color: #fff; /* common value */
+	text-transform: uppercase;
+}
+
+/* FORM-STYLING */
+
 /* MAIN LAYOUT */
 
 .header {
@@ -288,6 +278,10 @@ textarea {
 	margin: 0 auto;
 }
 
+main {
+	margin-bottom: 20px;
+}
+
 .footer {
 	position: fixed;
 	bottom: 0;
@@ -296,6 +290,10 @@ textarea {
 	width: 100%;
 	background: #000;
 }	
+
+.section-layout {
+	padding: 10px;
+}
 
 /* END MAIN LAYOUT */
 
