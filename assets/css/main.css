@@ -10,6 +10,18 @@
 	box-sizing: border-box; 
 }
 
+@font-face {
+	font-family: 'icomoon';
+	src:url('../../assets/icons/icomoon/fonts/icomoon.eot?-k1zypo');
+	src:url('../../assets/icons/icomoon/fonts/icomoon.eot?#iefix-k1zypo') format('embedded-opentype'),
+		url('../assets/icons/icomoon/fonts/icomoon.woff?-k1zypo') format('woff'),
+		url('../../assets/icons/icomoon/fonts/icomoon.ttf?-k1zypo') format('truetype'),
+		url('../../assets/icons/icomoon/fonts/icomoon.svg?-k1zypo#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 html, body  { 
 	height: 100%;
 	width: 100%;
@@ -49,12 +61,11 @@ body, input, textarea {
 
 /* GLOBAL STYLES */
 
-
 .clear { 
 	clear: both;
 } 
 
-/* .float-left {
+ .float-left {
 	float: left;
 }
 
@@ -102,8 +113,11 @@ body, input, textarea {
 	-webkit-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
-} /* add this to the parent of the element you want to vertically and horizontally center */
+}
 
+.heading-primary {
+	text-align: center;
+}
  
 /* cms styles */
 
@@ -159,7 +173,7 @@ a:focus {
 }
 
 strong, b {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 em, i {
@@ -206,6 +220,10 @@ h2 {
 
 h1 {
 	font-size: 160%;
+}
+
+h1 {
+	font-weight: 100;
 }
 
 

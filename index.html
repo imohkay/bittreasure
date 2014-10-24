@@ -16,14 +16,13 @@
 
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Lato:300,400,700,300italic,400italic|Roboto:400,300,100,400italic,700,700italic|Open+Sans:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
 
-<link rel="shortcut icon" href="assets/img/favicon.ico" />
+<link rel="shortcut icon" href="assets/img/favicon.ico">
 
-<link rel="stylesheet " href="assets/css/reset.css" type="text/css" />
+<link rel="stylesheet " href="assets/css/reset.css" type="text/css">
 
-<link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+<link rel="stylesheet" href="assets/icons/icomoon/style.css" type="text/css">
 
-
-<script type="text/javascript" src="assets/js/jquery-2.1.1.min.js"></script>
+<link rel="stylesheet" href="assets/css/main.css" type="text/css">
 
 <!--  Additional notes:
 // google analytics code if required
@@ -60,8 +59,88 @@
 }	
 </style>
 
+<style>
+.section {
+	background: #e5e5e5;
+}
+	
+</style>
+
 <section>
 	SEXY LANDING PAGE HERE
+</section>
+
+<section>
+	<h1 class="heading-primary">Treasure Hunts</h1>
+
+<style>
+.list-view {
+	background: #444;  /* comma separate later */
+	color: #eee; /* comma separate later */
+}
+
+.list-each {
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	border-top: 1px solid rgba(255,255,255,0.2);
+	position: relative;
+	padding: 10px;
+	padding-right: 50px; /* REMOVE LATER IF NOT REQUIRED */
+}
+
+.list-each .icon-list {
+	position: absolute;
+	right: 20px;
+	top: 0px;
+}
+
+.list-each-info {
+	display: none;
+}
+
+.list-toggle {
+	cursor: pointer;
+}
+	
+</style>
+
+List View (Maybe Filter later)
+      - Title
+	    - Start Date
+      - No of Players
+
+      - Region: Country, City, Locality
+	  
+	  - Bounty (Opt)
+	  - Fee (Opt)
+    - 
+    Physical
+	  - Play (or Sign up Prompt)
+
+	- Detail View
+	    - Description
+
+
+	<div class="list-view">
+		<div class="list-each">
+			<div><strong>Dance Bars in Mumbai</strong></div>
+			<div>Colaba - Worli, Mumbai</div>
+			<div>Starting in 3 days, 40min</div>
+
+			<div class="list-toggle js-toggle">MORE</div>
+			<div class="list-each-info">
+				<span class="icon-head" ></span> 10 participants
+				<span class="icon-watch"></span> 3days 10hrs
+
+				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi harum expedita ducimus incidunt, natus molestias molestiae tempora dolore fugiat, recusandae voluptas! Suscipit neque est ut delectus facere adipisci ex vitae.</div>
+				
+			</div> <!-- /list-each-info -->
+		</div> <!-- /list-each -->
+		<div class="list-each">
+			<div>Dance Bars in Mumbai</div>
+			<div>Colaba - Worli, Mumbai</div>
+			<div>Starting in 3 days, 40min</div>
+		</div> <!-- /list-each -->
+	</div> <!-- /list-view -->
 </section>
 
 <footer class="footer">
@@ -71,6 +150,9 @@
 </footer>
 
 <noscript><strong>You need Javascript to run this page</strong></noscript>
+
+<script src="assets/js/jquery-2.1.1.min.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 
