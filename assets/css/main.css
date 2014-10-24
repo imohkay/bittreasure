@@ -1,3 +1,8 @@
+/*
+// Figure if icons need attributions later: ios7-ultralight-2/svg/;
+// Add fonts locally later
+*/
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -18,7 +23,7 @@ body {
 }
 
 body, input, textarea {
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* COLUMNS */
