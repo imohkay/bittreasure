@@ -254,15 +254,45 @@ textarea {
 	padding: 10px;
 }
 
-.form-default input[type="text"]:focus, .form-default input[type="submit"]:focus, .form-default button:focus, form-default input[type="email"]:focus, .form-default input[type="password"]:focus, .form-default textarea:focus {
+.form-default input[type="text"]:focus, .form-default input[type="submit"]:focus, .form-default button:focus, .form-default input[type="email"]:focus, .form-default input[type="password"]:focus, .form-default textarea:focus {
 	border: 1px solid #3dc09d; /* common value */
 	outline: none;	
+}
+
+.form-help {
+	opacity: 0;
+	transition: all 0.2s ease-in;
+	font-size: 85%;
+	color: #4396BA;
+}
+
+input:invalid {
+	background-image: url("../../assets/icons/information29.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 3%;
+}
+
+input:valid {
+	background-image: url("../../assets/icons/check23.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 3%;
+}
+
+.form-default input[type="text"]:invalid:focus + .form-help, .form-default input[type="email"]:invalid:focus + .form-help, .form-default input[type="password"]:invalid:focus + .form-help {
+	opacity: 1;
+	transition: all 0.2s ease-in;
 }
 
 .form-default input[type="submit"], .form-default button {
 	background: #3dc09d;
 	color: #fff; /* common value */
 	text-transform: uppercase;
+}
+
+.form-default input[type="submit"]:hover, .form-default input[type="submit"]:focus, .form-default button:hover, .form-default button:focus {
+	background: #31997d;
 }
 
 /* FORM-STYLING */

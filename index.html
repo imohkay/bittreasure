@@ -74,18 +74,20 @@
 		<h1 class="heading-primary">Form Styling</h1>
 		<form class="form-default">
 			<div class="field-wrap">
-				<label for="">Username</label>
-				<input type="text">
+				<label for="input-username">Username</label>
+				<input id="input-username" type="text" required>
 			</div>
 
 			<div class="field-wrap">
 				<label for="">Password</label>
-				<input type="password" value="password">
+				<input type="password" minlength="7" pattern="(?=^.{7,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+				<div class="form-help">More than 7 characters, if you please :)</div>
 			</div>
 
 			<div class="field-wrap">
 				<label for="">Email</label>
-				<input type="email" placeholder="someone@something.com">
+				<input type="email" placeholder="someone@something.com" required>
+				<div class="form-help">So we can spam you, just kidding :)</div>
 			</div>
 
 			<div class="field-wrap">
