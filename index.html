@@ -83,7 +83,7 @@
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 	border-top: 1px solid rgba(255,255,255,0.2);
 	position: relative;
-	padding: 10px;
+	padding: 20px;
 	padding-right: 50px; /* REMOVE LATER IF NOT REQUIRED */
 }
 
@@ -99,6 +99,10 @@
 
 .list-toggle {
 	cursor: pointer;
+}
+
+.list-meta .b-icon {
+	padding: 0 5px 0 0;
 }
 	
 </style>
@@ -122,10 +126,12 @@ List View (Maybe Filter later)
 
 	<div class="list-view">
 		<div class="list-each">
-			<div><strong>Dance Bars in Mumbai</strong></div>
-			<div>Colaba - Worli, Mumbai</div>
-			<div>Starting in 3 days, 40min</div>
-
+			<div class="large-font"><strong>Dance Bars in Mumbai</strong></div>
+			<div class="list-meta">
+				<div>Colaba - Worli, Mumbai</div>
+				<div><span class="b-icon icon-watch"></span>3 days, 40min</div>
+			</div>
+			
 			<div class="list-toggle js-toggle">MORE</div>
 			<div class="list-each-info">
 				<span class="icon-head" ></span> 10 participants
