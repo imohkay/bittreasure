@@ -1,0 +1,228 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	
+	box-sizing: border-box; 
+}
+
+html, body  { 
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: #fff;
+	color: #222;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+body, input, textarea {
+	font-family: sans-serif;
+}
+
+/* COLUMNS */
+
+/*.col_25 {
+	width: 25%;
+}
+
+.col_33 {
+	width:33.33%;
+}
+
+.col_50 {
+	width: 50%;
+}
+
+.col_75 {
+	width:75%;
+}
+*/
+
+/* COLUMNS */
+
+/* GLOBAL STYLES */
+
+
+.clear { 
+	clear: both;
+} 
+
+/* .float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.small-font {
+	font-size: 90%;
+}
+
+.smaller-font {
+	font-size: 80%;
+}
+
+.large-font {
+	font-size: 110%;
+}
+
+.larger-font {
+	font-size: 120%;
+}
+
+.icon-style {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	font-weight: normal;
+}
+
+.center {
+    text-align: center;
+}
+
+.center-element {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dead-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+} /* add this to the parent of the element you want to vertically and horizontally center */
+
+ 
+/* cms styles */
+
+/* preprend with CMS selector */
+/* set a max-width if necessary on img_left and img_right and change on media query */
+
+/*
+ol, ul  {
+	padding-left:20px;
+	list-style-position: inside;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+.img_left, .img_right, .img_full {
+	display: block;
+}
+
+.img_left {
+	float: left;
+	padding: 0 10px 0 0;
+}
+
+.img_right {
+	float: right;
+	padding: 0 0 0 10px;
+}
+
+.img_full {
+	padding: 0 0 10px 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+*/
+
+/* end cms styles */
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+}
+
+a:focus {
+	outline: none;
+}
+
+strong, b {
+	font-weight: bold;
+}
+
+em, i {
+	font-style: italic;
+}
+
+sub, sup {
+	font-size: 65%;
+	position: relative;
+	line-height: 0;
+}
+
+sup {
+	top: -8px;
+}
+
+sub {
+	bottom: -8px;
+}
+
+p {
+	margin: 0 0 12px 0;
+}
+
+h6 {
+	font-size: 110%;
+}
+
+h5 {
+	font-size: 120%;
+}
+
+h4 {
+	font-size: 130%;
+}
+
+h3 {
+	font-size: 140%;
+}
+
+h2 {
+	font-size: 150%;
+}
+
+h1 {
+	font-size: 160%;
+}
+
+
+img, video {
+	max-width: 100%;
+	height: auto;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+textarea {
+	vertical-align: top;
+}
+
+/* END GLOBAL STYLES */
+
+
+/* MEDIA QUERIES */
+
+/*@media only screen and (max-width: 980px) {
+}*/
+
+/* END MEDIA QUERIES */
