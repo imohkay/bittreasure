@@ -242,6 +242,62 @@ textarea {
 
 /* END GLOBAL STYLES */
 
+/* LIST VIEW */
+
+.list-view {
+	background: #444;  /* comma separate later */
+	color: #eee; /* comma separate later */
+}
+
+.list-each {
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	border-top: 1px solid rgba(255,255,255,0.2);
+	position: relative;
+	padding: 20px;
+	padding-right: 50px; /* REMOVE LATER IF NOT REQUIRED */
+}
+
+.list-each .icon-list {
+	position: absolute;
+	right: 20px;
+	top: 0px;
+}
+
+.list-each-info {
+	display: none;
+}
+
+.list-toggle {
+	cursor: pointer;
+}
+
+.list-meta .b-icon {
+	padding: 0 5px 0 0;
+}
+	
+/* END LIST VIEW */
+
+/* MAIN LAYOUT */
+
+.header {
+	background: #f9f9f9;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	background: #000;
+}	
+
+/* END MAIN LAYOUT */
 
 /* MEDIA QUERIES */
 
