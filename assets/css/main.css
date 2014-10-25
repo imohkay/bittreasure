@@ -222,6 +222,7 @@ textarea {
 	font-weight: 300;
 	text-align: center;
 	border-radius: 10%;
+	cursor: pointer;
 }
 
 /* END GLOBAL STYLES */
@@ -299,14 +300,15 @@ textarea {
 	margin-bottom: 5px;
 }
 
-.form-default input[type="text"], .form-default input[type="email"], .form-default input[type="password"], .form-default input[type="submit"], .form-default button, .form-default textarea {
+.form-default input[type="text"], .form-default input[type="email"], .form-default input[type="password"], .form-default input[type="submit"], .form-default button, .form-default .submit, .form-default textarea {
 	width: 100%;
 	display: block;
 	border: 1px solid #ccc;
 	padding: 10px;
+	border-radius: 10px;
 }
 
-.form-default input[type="text"]:focus, .form-default input[type="submit"]:focus, .form-default button:focus, .form-default input[type="email"]:focus, .form-default input[type="password"]:focus, .form-default textarea:focus {
+.form-default input[type="text"]:focus, .form-default .submit:focus,.form-default input[type="submit"]:focus, .form-default button:focus, .form-default input[type="email"]:focus, .form-default input[type="password"]:focus, .form-default textarea:focus {
 	border: 1px solid #3dc09d; /* common value */
 	outline: none;	
 }
@@ -337,15 +339,81 @@ input:valid {
 	transition: all 0.2s ease-in;
 }
 
-.form-default input[type="submit"], .form-default button {
+.form-default input[type="submit"], .form-default button, .form-default .submit {
 	background: #3dc09d;
 	color: #fff; /* common value */
 	text-transform: uppercase;
+	text-align: center;
 }
 
-.form-default input[type="submit"]:hover, .form-default input[type="submit"]:focus, .form-default button:hover, .form-default button:focus {
+.form-default input[type="submit"]:hover, .form-default input[type="submit"]:focus, .form-default button:hover, .form-default button:focus, .form-default .submit:hover, .form-default .submit:focus {
 	background: #31997d;
+	cursor: pointer;
 }
+
+.validate {
+	color: #fff;
+	text-align: center;
+	opacity: 0;
+	height: 0;
+}
+
+.validate-content {
+	padding: 10px;
+}
+
+.validate .b-icon {
+	font-size: 250%;
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+.validate-success {
+	background: #76138B;
+	border-radius: 10px;
+}
+
+.b-fade-in {
+	opacity: 1;
+
+	height: auto;
+	transition: all 0.4s ease-in;
+	-webkit-animation: fadeOut 500ms ease 7000ms forwards;
+        animation: fadeOut 500ms ease 7000ms forwards;
+
+}
+
+@-webkit-keyframes fadeOut {
+    20% {
+        opacity: 1;
+    }
+    
+    50% {
+        opacity: 0.5;        
+    }
+
+    100% {
+        opacity: 0;
+        height: 0;
+    }
+}
+
+@keyframes fadeOut {
+    20% {
+        opacity: 1;
+    }
+    
+    50% {
+        opacity: 0.5;        
+    }
+
+    100% {
+        opacity: 0;
+        height: 0;
+    }
+}
+
 
 /* FORM-STYLING */
 
