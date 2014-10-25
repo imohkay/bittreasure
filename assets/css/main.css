@@ -40,22 +40,21 @@ body, input, textarea {
 
 /* COLUMNS */
 
-/*.col_25 {
+.col-25 {
 	width: 25%;
 }
 
-.col_33 {
+.col-33 {
 	width:33.33%;
 }
 
-.col_50 {
+.col-50 {
 	width: 50%;
 }
 
-.col_75 {
+.col-75 {
 	width:75%;
 }
-*/
 
 /* COLUMNS */
 
@@ -115,7 +114,7 @@ body, input, textarea {
 	transform: translate(-50%,-50%);
 }
 
-.heading-primary {
+.heading-primary, .heading-secondary {
 	text-align: center;
 	margin: 10px 0;
 }
@@ -181,7 +180,7 @@ h1 {
 	font-size: 160%;
 }
 
-h1 {
+h1, h2 {
 	font-weight: 100;
 }
 
@@ -199,6 +198,28 @@ textarea {
 	vertical-align: top;
 }
 
+.spacer-sm {
+	padding: 5px 0;
+	display: block;
+	width: 100%;
+}
+
+.spacer-med {
+	padding: 10px 0;
+	display: block;
+	width: 100%;
+}
+
+.button-inline {
+	background: #E5694C;
+	color: #fff;
+	padding: 5px 10px;
+	display: inline-block;
+	font-weight: 300;
+	text-align: center;
+	border-radius: 10%;
+}
+
 /* END GLOBAL STYLES */
 
 /* LIST VIEW */
@@ -213,17 +234,7 @@ textarea {
 	border-top: 1px solid rgba(255,255,255,0.2);
 	position: relative;
 	padding: 20px;
-	padding-right: 50px; /* REMOVE LATER IF NOT REQUIRED */
-}
-
-.list-each .icon-list {
-	position: absolute;
-	right: 20px;
-	top: 0px;
-}
-
-.list-each-info {
-	display: none;
+	padding-right: 80px; /* REMOVE LATER IF NOT REQUIRED */
 }
 
 .list-toggle {
@@ -232,8 +243,24 @@ textarea {
 
 .list-meta .b-icon {
 	padding: 0 5px 0 0;
+	font-size: 150%;
+	display: inline-block;
+	vertical-align: middle;
 }
-	
+
+.list-each-play {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.list-meta-detail-info {
+	font-size: 180%;
+}
+
 /* END LIST VIEW */
 
 /* FORM-STYLING */
@@ -280,7 +307,7 @@ input:valid {
 	background-size: 3%;
 }
 
-.form-default input[type="text"]:invalid:focus + .form-help, .form-default input[type="email"]:invalid:focus + .form-help, .form-default input[type="password"]:invalid:focus + .form-help {
+.form-default input[type="text"]:valid:focus + .form-help, .form-default input[type="email"]:valid:focus + .form-help, .form-default input[type="password"]:valid:focus + .form-help {
 	opacity: 1;
 	transition: all 0.2s ease-in;
 }
