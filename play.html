@@ -84,7 +84,10 @@
 		<form class="form-default">
 			<div class="field-wrap">
 				<span class="submit js-toggle-fade">I wanna Play!</span>
-				<div class="button-inline">Pay now</div><input type="text" value="Bitcoin Foo Returned" readonly>
+				<div class="button-inline">Pay now</div><input type="text" value="Bitcoin Foo Returned" class="input-readonly" readonly>
+
+				<div class="button-inline">Pay now</div><input type="text" value="Bitcoin Foo Returned">
+
 				<div class="validate validate-success">
 					<div class="validate-content">
 						<p><span class="icon-circle-check b-icon"></span><span class="largest-font"><strong>REGISTERED!</strong></span></p>
@@ -109,6 +112,20 @@
 
 <script src="assets/js/jquery-2.1.1.min.js"></script>
 <script src="assets/js/main.js"></script>
+	<script>
+$(document).ready(function(){
+	$(".input-readonly").on("focus", function(){
+		console.log("focus called");
+		$(this).select();
+	});
+	$(".input-readonly").on("click mouseup", function(e){
+		console.log("click mouseup called", e);
+		e.preventDefault();
+		$(this).focus();
+	});
+});
+
+</script>
 
 </body>
 

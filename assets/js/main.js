@@ -7,4 +7,8 @@ $(document).ready(function(){
     $(this).next().addClass("b-fade-in");
   });
 
+  $(".rbox-form-signup").rbox({
+  	"type": "inline"
+  });
+
 });

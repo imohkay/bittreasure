@@ -24,6 +24,8 @@
 
 <link rel="stylesheet" href="assets/css/main.css" type="text/css">
 
+<link rel="stylesheet" href="assets/css/jquery-rbox.css" type="text/css">
+
 <!--  Additional notes:
 // google analytics code if required
 -->
@@ -63,8 +65,23 @@
 				<div>Dance Bars in Mumbai</div>
 				<div>Colaba - Worli, Mumbai</div>
 				<div>Starting in 3 days, 40min</div>
+				<a href="#" class="button-inline list-each-play rbox-form-signup" data-rbox-inline="#form-sign-up">PLAY</a>
 			</div> <!-- /list-each -->
 		</div> <!-- /list-view -->
+	</section>
+
+	<section class="section-layout">
+		<div class="masonry-each">
+			<div class="module-card">
+				<div class="list-meta">
+					<div class="large-font"><strong>Dance Bars in Mumbai</strong></div>
+					<p>Colaba - Worli, Bombay</p>
+					<p><span class="b-icon icon-watch"></span>1 day</p>
+					<p><span class="b-icon icon-head"></span> 10 players</p>
+					<a href="play.html" class="button-inline list-each-play">PLAY</a>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section class="section-layout">
@@ -102,9 +119,36 @@
 	<button>Menu C</button>
 </footer>
 
+<div id="form-sign-up">
+	<form class="form-default">
+		<h2 class="heading-secondary">Sign up now to Play</h1>
+		<div class="field-wrap">
+			<label for="input-username">Username</label>
+			<input id="input-username" type="text" minlength="1" required>
+			<div class="form-help">Nice work.</div>
+		</div>
+
+		<div class="field-wrap">
+			<label for="">Email</label>
+			<input type="email" placeholder="someone@something.com" required>
+			<div class="form-help">Smashing!</div>
+		</div>
+
+		<div class="field-wrap">
+			<label for="">Password</label>
+			<input type="password" required>
+		</div>
+
+		<div class="field-wrap">
+			<input type="submit" value="Here we go!">
+		</div>
+	</form>
+</div> <!-- /form-sign-up -->
+
 <noscript><strong>You need Javascript to run this page</strong></noscript>
 
 <script src="assets/js/jquery-2.1.1.min.js"></script>
+<script src="assets/js/jquery-rbox.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>

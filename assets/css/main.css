@@ -315,6 +315,7 @@ textarea {
 
 .form-help {
 	opacity: 0;
+	height: 0;
 	transition: all 0.2s ease-in;
 	font-size: 85%;
 	color: #4396BA;
@@ -336,6 +337,7 @@ input:valid {
 
 .form-default input[type="text"]:valid:focus + .form-help, .form-default input[type="email"]:valid:focus + .form-help, .form-default input[type="password"]:valid:focus + .form-help {
 	opacity: 1;
+	height: auto;
 	transition: all 0.2s ease-in;
 }
 
@@ -462,6 +464,15 @@ main {
 .section-bright {
 	background: #3DC09D;
 }
+
+/* module-card */
+
+.module-card {
+    border: 1px solid #3DC09D;
+    padding: 20px;
+}
+
+/*  end module-card  */
 
 /* END MAIN LAYOUT */
 
