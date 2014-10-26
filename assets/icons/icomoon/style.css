@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-rz6z44');
+	src:url('fonts/icomoon.eot?#iefix-rz6z44') format('embedded-opentype'),
+		url('../assets/icons/icomoon/fonts/icomoon.woff?-rz6z44') format('woff'),
+		url('fonts/icomoon.ttf?-rz6z44') format('truetype'),
+		url('fonts/icomoon.svg?-rz6z44#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon';
 	speak: none;
@@ -386,6 +397,12 @@
 }
 .icon-ellipsis:before {
 	content: "\e129";
+}
+.icon-location2:before {
+	content: "\e613";
+}
+.icon-location3:before {
+	content: "\e614";
 }
 .icon-heart2:before {
 	content: "\e601";

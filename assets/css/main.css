@@ -84,12 +84,20 @@ body, input, textarea {
 	font-size: 80%;
 }
 
+.smaller-font {
+	font-size: 70%;
+}
+
 .large-font {
 	font-size: 110%;
 }
 
 .larger-font {
 	font-size: 120%;
+}
+
+.narrow-font {
+	font-weight: 300;
 }
 
 .icon-style {
@@ -122,7 +130,12 @@ body, input, textarea {
 	text-align: center;
 	margin: 10px 0;
 }
- 
+
+.b-icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+
 a {
   text-decoration: none;
 }
@@ -248,8 +261,6 @@ textarea {
 
 .list-meta .b-icon, .list-meta-detail .b-icon {
 	padding: 0 5px 0 0;
-	display: inline-block;
-	vertical-align: middle;
 }
 
 .list-meta .b-icon {
@@ -366,8 +377,6 @@ input:valid {
 
 .validate .b-icon {
 	font-size: 250%;
-	display: inline-block;
-	vertical-align: middle;
 	padding-right: 5px;
 }
 
@@ -467,10 +476,47 @@ main {
 
 /* module-card */
 
+.masonry-col {
+    width: 50%;
+    float: left;
+}
+
 .module-card {
     border: 1px solid #3DC09D;
+    position: relative;
     padding: 20px;
 }
+
+.card-bounty {
+	position: absolute;
+	top: 0;
+	right: 0;	
+	background: #8354B5;
+	color: #fff;
+	padding: 10px;
+}
+
+.card-time {
+	float: left;
+	padding: 0 10px;
+
+}
+
+.card-time-heading {
+	color: #E5694C;
+	font-size: 250%;
+	font-family: 'Roboto Condensed', sans-serif;
+	position: relative;
+	background: #eee;
+	padding: 5px;
+	min-width: 50px;
+}
+
+.card-time-heading:after {
+}
+
+ 
+
 
 /*  end module-card  */
 
@@ -478,7 +524,10 @@ main {
 
 /* MEDIA QUERIES */
 
-/*@media only screen and (max-width: 980px) {
-}*/
+ @media only screen and (min-width: 600px) {
+    .masonry-col {
+        width: 25%;
+    }
+}
 
 /* END MEDIA QUERIES */
