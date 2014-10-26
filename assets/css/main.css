@@ -29,7 +29,7 @@ html, body  {
 
 body {
 	background-color: #fff;
-	color: #222;
+	color: #333;
 	font-size: 16px;
 	line-height: 1.5;
 }
@@ -245,15 +245,21 @@ textarea {
 /* LIST VIEW */
 
 .list-view {
-	background: #444;  /* comma separate later */
-	color: #eee; /* comma separate later */
+	background: #fff;  /* comma separate later */
+	color: #000033; /* comma separate later */
+	font-family: 'Roboto';
 }
 
 .list-each {
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 	border-top: 1px solid rgba(255,255,255,0.2);
+	border: 3px solid #CEAD00;
+	border-style: dashed;
+	margin-bottom: 1px;
 	position: relative;
 	padding: 20px;
+	margin: 10px;
+	background: #ffffb3;
 	padding-right: 50px; /* REMOVE LATER IF NOT REQUIRED */
 }
 
@@ -296,6 +302,13 @@ textarea {
 	width: 100%;
 	background: #000;
 }	
+.padding-small{
+	padding: 10px;
+}
+
+.padding-medium{
+	padding: 25px;
+}
 
 /* END MAIN LAYOUT */
 
